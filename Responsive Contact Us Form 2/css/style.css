@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	background: #c8e8e9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	width: 80%;
+	background: #fff;
+	padding: 20px 60px 40px 40px;
+	border-radius: 6px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.left-side {
+	width: 25%;
+	height: 100%;
+	position: relative;
+}
+
+.left-side::before {
+	content: '';
+	position: absolute;
+	height: 70%;
+	width: 2px;
+	background: #afafb6;
+	right: -15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.left-side .details {
+	margin: 14px;
+	text-align: center;
+}
+
+.left-side .details i {
+	font-size: 30px;
+	color: #3e2093;
+	margin-bottom: 10px;
+}
+
+.left-side .details .topic {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.left-side .text-one,
+.left-side .text-two {
+	font-size: 14px;
+	color: #afafb6;
+}
+
+.right-side {
+	width: 75%;
+	margin-right: 90px;
+	margin-left: 75px;
+}
+
+.right-side .topic-text {
+	font-size: 23px;
+	font-weight: 600;
+	color: #3e2093;
+}
+
+.input-box {
+	height: 50px;
+	margin: 12px 0;
+	width: 100%;
+}
+
+.input-box textarea,
+.input-box input {
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-radius: 6px;
+	background: #F0F1F8;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 0 15px;
+	resize: none;
+}
+
+.message-box {
+	min-height: 110px;
+}
+
+.button input {
+	color: #fff;
+	font-size: 18px;
+	background: #3e2093;
+	outline: none;
+	border: none;
+	border-radius: 6px;
+	padding: 8px 16px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.button input:hover {
+	background: #5029bc;
+}
